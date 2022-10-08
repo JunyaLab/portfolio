@@ -121,3 +121,50 @@ a{
     align-items: center;
 }
 
+
+
+@media (max-width: 600px) {
+    #title{
+        margin: 15% 0 10%;
+    }
+    
+    #change-language-btn{
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+    }
+
+    #follow-me{
+        margin: 5% 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #instagram-btn{
+        margin: 0 5%;
+        width: 100px;
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    
+    #github-btn{
+        margin: 0 5%;
+        width: 100px;
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    
+    #grid{
+        width: 50%;
+        margin: 10% auto;
+        padding: auto;
+        display: grid;
+        grid-gap: 15%;
+        place-items: center;
+        grid-template-rows: repeat(4, 75px);
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
