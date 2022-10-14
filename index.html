@@ -5,73 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navigation.css">
+    <link rel="icon" href="favicon.ico"><link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
     
     <!-- Title -->
-    <h1 id="title">ぽ〜とふぉりお</h1>
-    
-    <a id="change-language-btn" href="./english.html">English</a>
-    <nav id="follow-me">
-        <a id="github-btn" href="https://github.com/JunyaLab/JunyaLab">GitHub</a>
-        <a id="instagram-btn" href="https://instagram.com/iam_junya.s">Instagram</a>
-    </nav>
+    <h1 id="title-ja" class="title">ぽ〜とふぉりお</h1>
 
     <!--  -->
-    <div id="greeting">
+    <div id="navigation">
+        <a id="language-btn" class="flowbtn" href="./english.html"><i class="fas fa-language"></i></a>
+        <a id="github-btn" class="flowbtn" href="https://github.com/JunyaLab/JunyaLab"><i class="fab fa-github"></i></a>
+        <a id="instagram-btn" class="flowbtn" href="https://instagram.com/iam_junya.s"><i class="fab fa-instagram"></i></a>
+        <a id="top-btn" class="flowbtn" href="#title-ja"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <!--  -->
+    <div id="table">
+        <h2 class="section-title">【 目次 】</h2>
+        <ul>
+            <li><h3><a href="#greeting-ja">はじめに</a></h3></li>
+            <li><h3><a href="#career-ja">自己紹介</a></h3></li>
+            <li><h3><a href="#products-ja">制作物</a></h3></li>
+        </ul>
+    </div>
+
+
+    <!--  -->
+    <div id="greeting-ja" class="greeting">
+        <h2 class="section-title">【 はじめに 】</h2>
         <p>
-            ようこそいらっしゃいました。<br>
             ご覧いただき、ありがとうございます。<br>
-            Junyaと申します。情報系の大学3年生です。<br>
+            Junyaと申します。大学3年生です。<br>
             こちらのサイトは随時更新を続けてまいりますのでお楽しみに。
         </p>
     </div>
+    
+    
+    <!--  -->    
+    <div id="career-ja" class="career">
+        <h2 class="section-title">【 自己紹介 】</h2>
+        <p>
+            自己紹介も兼ねて私の経歴をゆる〜くご紹介いたします。<br><br>
+            
+            じゅんや。ちょうど2000年生まれ。<br>
+            神奈川生まれ東京育ちで、現在は福島にある会津大学に通う3年生。<br>
+            染められやすく、とにかく多趣味。好きなものは新しい体験で、苦手なものは待機時間。<br>
+            ここ最近は、起床後すぐに散歩する「あさんぽ」が日課になっている。<br>
+            叱られると落ち込んでしまうこともあるため、褒めてほしい。褒められて鼻が伸びるタイプ。<br>
+            人生における自身のミッションを「次世代の挑戦ハードルを低くする」ことと捉えている。<br><br>
+            
+            <!-- 2013: 中学受験を経て私立桐蔭学園中等教育学校に入学<br>
+            2015: サッカーの全国大会でベスト8<br>
+            2016: 中高一貫のため、そのまま内部進学<br>
+            2018: 私立桐蔭学園中等教育学校を卒業<br>
+            2019: 河合塾新宿校で浪人<br>
+            2020: 福島県立会津大学に入学（理転）<br>
+            2024: 福島県立会津大学を卒業（見込み）<br> -->
+
+        </p>
+    </div>
+    
+
 
     <!-- タイル状で制作物を表示 -->
-    <h2 id="grid-title">【 制作物 】</h2>
-    <p id="introduce-portfolio">
-        これまでに制作したものです。<br>
-        ぜひ、こちらも覗いてみてください。<br>
-        フィードバックもいただけると幸いです。
-    </p>
-    <div id="grid">
-        <a href="https://junyalab.github.io/asanpo-diary/" class="tile">
-            <h3 id="tile-title">あさんぽ日記</h3>
-            <div>
-                <p>眠い目擦る。</p>
-                <p>まずは歩きだす。</p>
-                <p>そのまま歩き続ける。</p>
-                <p>心に少し余裕が生まれる。</p>
-            </div>
-        </a>
-        <a href="https://junyalab.github.io/cocktail-book/" class="tile">
-            <h3 id="tile-title">カクテルブック</h3>
-            <div class="tile-description">
-                <p>大人になる。</p>
-                <p>お酒と付き合う。</p>
-                <p>あなただけの特別を。</p>
-                <p>苦手なあなたは切り札を。</p>
-            </div>
-        </a>
-        <a href="https://junyalab.github.io/asanpo-diary/" class="tile">
-            <h3 id="tile-title">あさんぽ日記</h3>
-            <div>
-                <p>眠い目擦る。</p>
-                <p>まずは歩きだす。</p>
-                <p>そのまま歩き続ける。</p>
-                <p>心に少し余裕が生まれる。</p>
-            </div>
-        </a>
-        <a href="https://junyalab.github.io/cocktail-book/" class="tile">
-            <h3 id="tile-title">カクテルブック</h3>
-            <div class="tile-description">
-                <p>大人になる。</p>
-                <p>お酒と付き合う。</p>
-                <p>あなただけの特別を。</p>
-                <p>苦手なあなたは切り札を。</p>
-            </div>
-        </a>
+    <div id="products-ja" class="products">
+        <h2 class="section-title">【 制作物 】</h2>
+        <p>
+            これまでに制作したものです。<br>
+            ぜひ、こちらも覗いてみてください。<br>
+            フィードバックもいただけると幸いです。
+        </p>
+        <div id="grid">
+            <a href="https://junyalab.github.io/asanpo-diary/" class="tile">
+                <h3 id="tile-title">あさんぽ日記</h3>
+                <div>
+                    <p>眠い目擦る。</p>
+                    <p>まずは歩きだす。</p>
+                    <p>そのまま歩き続ける。</p>
+                    <p>心に少し余裕が生まれる。</p>
+                </div>
+            </a>
+            <a href="https://junyalab.github.io/cocktail-book/" class="tile">
+                <h3 id="tile-title">カクテルブック</h3>
+                <div class="tile-description">
+                    <p>大人になる。</p>
+                    <p>お酒と付き合う。</p>
+                    <p>あなただけの特別を。</p>
+                    <p>苦手なあなたは切り札を。</p>
+                </div>
+            </a>
+            <a href="https://junyalab.github.io/asanpo-diary/" class="tile">
+                <h3 id="tile-title">あさんぽ日記</h3>
+                <div>
+                    <p>眠い目擦る。</p>
+                    <p>まずは歩きだす。</p>
+                    <p>そのまま歩き続ける。</p>
+                    <p>心に少し余裕が生まれる。</p>
+                </div>
+            </a>
+            <a href="https://junyalab.github.io/cocktail-book/" class="tile">
+                <h3 id="tile-title">カクテルブック</h3>
+                <div class="tile-description">
+                    <p>大人になる。</p>
+                    <p>お酒と付き合う。</p>
+                    <p>あなただけの特別を。</p>
+                    <p>苦手なあなたは切り札を。</p>
+                </div>
+            </a>
+        </div>
     </div>
 
 

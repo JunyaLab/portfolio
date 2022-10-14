@@ -6,21 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navigation.css">
+    <link rel="icon" href="favicon.ico"><link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
     
     <!-- Title -->
-    <h1 id="title">Junya's Portfolio</h1>
+    <h1 id="title-en" class="title">Junya's Portfolio</h1>
     
-    <a id="change-language-btn" href="./index.html">日本語</a>
-    <nav id="follow-me">
-        <a id="github-btn" href="https://github.com/JunyaLab/JunyaLab">GitHub</a>
-        <a id="instagram-btn" href="https://instagram.com/iam_junya.s">Instagram</a>
-    </nav>
+    <div id="navigation">
+        <a id="language-btn" class="flowbtn" href="./index.html"><i class="fas fa-language"></i></a>
+        <a id="github-btn" class="flowbtn" href="https://github.com/JunyaLab/JunyaLab"><i class="fab fa-github"></i></a>
+        <a id="instagram-btn" class="flowbtn" href="https://instagram.com/iam_junya.s"><i class="fab fa-instagram"></i></a>
+        <a id="top-btn" class="flowbtn" href="#title-en"><i class="fas fa-chevron-up"></i></a>
+    </div>
 
     <!--  -->
-    <div id="greeting">
+    <div id="table">
+        <h2 class="section-title">【 Table 】</h2>
+        <ul>
+            <li><h3><a href="#greeting-en">Greeting</a></h3></li>
+            <li><h3><a href="#career-en">Career</a></h3></li>
+            <li><h3><a href="#products-en">Products</a></h3></li>
+        </ul>
+    </div>
+
+    <!--  -->
+    <div id="greeting-en" class="greeting">
+        <h2 class="section-title">【 Greeting 】</h2>
         <p>
             Thank you for coming.<br>
             I am Junya, a third year university student in the information field.<br>
@@ -28,50 +42,74 @@
         </p>
     </div>
 
+    <div id="career-en" class="career">
+        <h2 class="section-title">【 Career 】</h2>
+        <p>
+            I will introduce myself, including my career.<br><br>
+            
+            My name is Junya. I was born in just 2000. I was born in Kanagawa and raised in Tokyo. <br>
+            Currently a third-year undergraduate student at the University of Aizu in Fukushima.<br>
+            I have a lot of hobby, particularly travel and talking to someone have different backgrounds.<br>
+            Recently, I often take a walk called "asanpo" in the morning.<br>
+            <br><br>
+            
+            <!-- 2013: 中学受験を経て私立桐蔭学園中等教育学校に入学<br>
+            2015: サッカーの全国大会でベスト8<br>
+            2016: 中高一貫のため、そのまま内部進学<br>
+            2018: 私立桐蔭学園中等教育学校を卒業<br>
+            2019: 河合塾新宿校で浪人<br>
+            2020: 福島県立会津大学に入学（理転）<br>
+            2024: 福島県立会津大学を卒業（見込み）<br> -->
+
+        </p>
+    </div>
+
     <!-- タイル状で制作物を表示 -->
-    <h2 id="grid-title"> 【 Products 】</h2>
-    <p id="introduce-portfolio">
-        These are what I have produced so far.<br>
-        I encourage you to visit these sites.
-        I would be so happy to receive your feedback as well.
-    </p>
-    <div id="grid">
-        <a href="https://junyalab.github.io/asanpo-diary/" class="tile">
-            <h3 id="tile-title">Asanpo Diary</h3>
-            <div>
-                <p>Wake up.</p>
-                <p>Start walking.</p>
-                <p>Go on just walking.</p>
-                <p>Feel happier and enjoy.</p>
-            </div>
-        </a>
-        <a href="https://junyalab.github.io/cocktail-book/" class="tile">
-            <h3 id="tile-title">Cocktail Book</h3>
-            <div class="tile-description">
-                <p>Growing up.</p>
-                <p>Knowing alcohol.</p>
-                <p>Find your favorites.</p>
-                <p>Prepare for emergency.</p>
-            </div>
-        </a>
-        <a href="https://junyalab.github.io/asanpo-diary/" class="tile">
-            <h3 id="tile-title">Asanpo Diary</h3>
-            <div>
-                <p>Wake up.</p>
-                <p>Start walking.</p>
-                <p>Go on just walking.</p>
-                <p>Feel happier and enjoy.</p>
-            </div>
-        </a>
-        <a href="https://junyalab.github.io/cocktail-book/" class="tile">
-            <h3 id="tile-title">Cocktail Book</h3>
-            <div class="tile-description">
-                <p>Growing up.</p>
-                <p>Knowing alcohol.</p>
-                <p>Find your favorites.</p>
-                <p>Prepare for emergency.</p>
-            </div>
-        </a>
+    <div id="products-en" class="products">
+        <h2 class="section-title"> 【 Products 】</h2>
+        <p>
+            These are what I have produced so far.<br>
+            I encourage you to visit these sites.
+            I would be so happy to receive your feedback as well.
+        </p>
+        <div id="grid">
+            <a href="https://junyalab.github.io/asanpo-diary/" class="tile">
+                <h3 id="tile-title">Asanpo Diary</h3>
+                <div>
+                    <p>Wake up.</p>
+                    <p>Start walking.</p>
+                    <p>Go on just walking.</p>
+                    <p>Feel happier and enjoy.</p>
+                </div>
+            </a>
+            <a href="https://junyalab.github.io/cocktail-book/" class="tile">
+                <h3 id="tile-title">Cocktail Book</h3>
+                <div class="tile-description">
+                    <p>Growing up.</p>
+                    <p>Knowing alcohol.</p>
+                    <p>Find your favorites.</p>
+                    <p>Prepare for emergency.</p>
+                </div>
+            </a>
+            <a href="https://junyalab.github.io/asanpo-diary/" class="tile">
+                <h3 id="tile-title">Asanpo Diary</h3>
+                <div>
+                    <p>Wake up.</p>
+                    <p>Start walking.</p>
+                    <p>Go on just walking.</p>
+                    <p>Feel happier and enjoy.</p>
+                </div>
+            </a>
+            <a href="https://junyalab.github.io/cocktail-book/" class="tile">
+                <h3 id="tile-title">Cocktail Book</h3>
+                <div class="tile-description">
+                    <p>Growing up.</p>
+                    <p>Knowing alcohol.</p>
+                    <p>Find your favorites.</p>
+                    <p>Prepare for emergency.</p>
+                </div>
+            </a>
+        </div>
     </div>
 
     <script src="./script.js"></script>
