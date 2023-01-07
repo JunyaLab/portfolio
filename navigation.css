@@ -57,6 +57,20 @@
     font-size:35px;
 }
 
+/* Twitter */
+#twitter-btn {
+    border:solid 2px #00acee;
+    color:#00acee;
+    background-color: #ffeedd;
+}
+/* Instagramマウスホバー時 */
+#twitter-btn:hover{
+    color: #ffeedd;
+    background:#00acee;
+    border:solid 2px #ffeedd;
+    font-size:35px;
+}
+
 /* Instagram */
 #instagram-btn {
     border:solid 2px #c6529a;
